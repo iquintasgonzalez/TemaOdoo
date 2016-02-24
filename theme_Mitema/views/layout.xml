@@ -2,7 +2,7 @@
 <openerp>
     <data>
         <!-- Customize header  -->
-        <template id="custom_header" inherit_id="website.prueba" name="Custom Header">
+        <template id="custom_header" inherit_id="website.layout" name="Custom Header">
 
             <!-- Assign an id  -->
             <xpath expr="//div[@id='wrapwrap']/header" position="attributes">

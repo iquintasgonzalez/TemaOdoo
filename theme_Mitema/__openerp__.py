@@ -4,9 +4,7 @@
   'version':'1.0',
   'author':'Nacho',
   'category': 'Theme/Hidden',
-  'data': [
-        'views/templates.xml',
-    ],
+  'data': [ 'views/layout.xml' ],
   'sequence': 1000,
   'images': [
         'static/description/cover.png',
