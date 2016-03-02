@@ -1,5 +1,5 @@
 {
-    'name': 'Default Theme',
+    'name': 'Defsssssssault Theme',
     'description': 'Default website theme to showcase customization possibilities.',
     'category': 'Theme/Hidden',
     'sequence': 1000,
