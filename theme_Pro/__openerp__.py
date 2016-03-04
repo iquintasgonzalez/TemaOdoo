@@ -1,6 +1,6 @@
 {
     'name': 'Unicornios rosas',
-    'description': '0.9',
+    'description': '1.1',
 'category': 'Theme/Creative',
     'version': '1.0',
     'author': 'NACHO S.A.',

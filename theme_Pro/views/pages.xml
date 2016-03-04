@@ -3,7 +3,7 @@
     <data>
 
         <!-- === Services Page === -->
-        <template name="Services page" id="website.pages" page="True">
+        <template name="Servicios page" id="website.servicios" page="True">
             <t t-call="website.layout">
                 <div id="wrap">
                     <div class="container">
@@ -19,10 +19,37 @@
                 </div>
             </t>
         </template>
+        
+        <!-- === Vacaciones Page === -->
+        <template name="Vacaciones page" id="website.vacaciones" page="True">
+            <t t-call="website.layout">
+                <div id="wrap2">
+                    <div class="container2">
+                        <img alt="vacaciones" class="img-square" src="/theme_Pro/static/src/img/imagenPag.jpg"/>
+                        <body>
+                        <div style="color:#FF0000;">Esto es una prueba de vacaciones</div>
+                        </body>                        
 
-        <record id="services_page_link" model="website.menu">
-            <field name="name">Services</field>
-            <field name="url">/page/services</field>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </t>
+        </template>
+        
+        
+
+        <record id="servicios_page_link" model="website.menu">
+            <field name="name">Servicios</field>
+            <field name="url">/page/servicios</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">99</field>
+        </record>
+        
+        <record id="services_page_link2" model="website.menu">
+            <field name="name">Vacaciones</field>
+            <field name="url">/page/vacaciones</field>
             <field name="parent_id" ref="website.main_menu" />
             <field name="sequence" type="int">99</field>
         </record>
