@@ -38,6 +38,36 @@
             </t>
         </template>
         
+        <template name="QuienesSomos page" id="website.quienessomos" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Quienes Somos</h1>
+                        <ul class="quienessomos">
+                            <li>
+                                <h3>El que más manda</h3>
+                                <img src="/theme_Pro/static/src/img/Boss.jpg"  height="200" width="200"/>
+                                <h4>El gran jefe</h4>
+                            </li>
+                            <li>
+                                <h3>El que despide</h3>
+                                <img src="/theme_Pro/static/src/img/chica.png"  height="200" width="200"/>
+                                <h4>Amanda Barros</h4>
+                            </li>
+                            <li>
+                                <h3>El que entrena</h3>
+                                <img src="/theme_Pro/static/src/img/currante.jpg"  height="200" width="200"/>
+                                <h4>DePereira el Malo</h4>
+                            </li>
+                        </ul>
+                        <!-- === Snippets' area === -->
+                        <div class="oe_structure" />
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        
         
 
         <record id="servicios_page_link" model="website.menu">
@@ -53,6 +83,14 @@
             <field name="parent_id" ref="website.main_menu" />
             <field name="sequence" type="int">99</field>
         </record>
+        
+          <record id="quienessomos_page_link" model="website.menu">
+            <field name="name">Quienes Somos</field>
+            <field name="url">/page/quienessomos</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">80</field>
+        </record>
+
 
     </data>
 </openerp>
